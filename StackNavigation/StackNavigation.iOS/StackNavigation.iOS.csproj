@@ -88,7 +88,6 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="ViewControllers\Page1ViewController.cs" />
     <Compile Include="ViewControllers\Page2ViewController.cs" />
-    <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />

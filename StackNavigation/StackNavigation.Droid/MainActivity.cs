@@ -1,8 +1,5 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.Content;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
 
@@ -11,20 +8,30 @@ namespace StackNavigation.Droid
     [Activity(Label = "StackNavigation.Droid", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            var menuListView = FindViewById<ListView>(Resource.Id.menuListView);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            menuListView.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, new[] { "Home", "About", "Contact" });
+
+            menuListView.ItemClick += OnMenuClick;
+        }
+
+        private void OnMenuClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            Intent intent = null;
+
+            switch (e.Position)
+            {
+                case 0: intent = new Intent(this, typeof(HomeActivity)); break;
+                case 1: intent = new Intent(this, typeof(AboutActivity)); break;
+                case 2: intent = new Intent(this, typeof(ContactActivity)); break;
+            }
+
+            StartActivity(intent);
         }
     }
 }
