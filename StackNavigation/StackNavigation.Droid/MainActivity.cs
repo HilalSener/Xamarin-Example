@@ -6,9 +6,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace StackNavigation.Android
+namespace StackNavigation.Droid
 {
-    [Activity(Label = "StackNavigation.Android", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "StackNavigation.Droid", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         int count = 1;

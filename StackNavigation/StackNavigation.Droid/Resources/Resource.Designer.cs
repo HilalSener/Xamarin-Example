@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("StackNavigation.Android.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("StackNavigation.Droid.Resource", IsApplication=true)]
 
-namespace StackNavigation.Android
+namespace StackNavigation.Droid
 {
 	
 	
