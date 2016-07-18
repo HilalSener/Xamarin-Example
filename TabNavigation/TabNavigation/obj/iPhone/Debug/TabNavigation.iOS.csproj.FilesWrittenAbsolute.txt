@@ -1,8 +1,0 @@
-/Users/HilalSener/Github/xamarin-Example/TabNavigation/TabNavigation/obj/iPhone/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/HilalSener/Github/xamarin-Example/TabNavigation/TabNavigation/obj/iPhone/Debug/ibtool/LaunchScreen.nib
-/Users/HilalSener/Github/xamarin-Example/TabNavigation/TabNavigation/obj/iPhone/Debug/optimized/
-/Users/HilalSener/Github/xamarin-Example/TabNavigation/TabNavigation/obj/iPhone/Debug/optimized/Entitlements.plist
-/Users/HilalSener/Github/xamarin-Example/TabNavigation/TabNavigation/bin/iPhone/Debug/TabNavigation.exe.mdb
-/Users/HilalSener/Github/xamarin-Example/TabNavigation/TabNavigation/bin/iPhone/Debug/TabNavigation.exe
-/Users/HilalSener/Github/xamarin-Example/TabNavigation/TabNavigation/obj/iPhone/Debug/TabNavigation.exe
-/Users/HilalSener/Github/xamarin-Example/TabNavigation/TabNavigation/obj/iPhone/Debug/TabNavigation.exe.mdb
