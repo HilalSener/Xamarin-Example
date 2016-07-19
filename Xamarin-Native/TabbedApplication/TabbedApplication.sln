@@ -1,7 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabbedApplication", "TabbedApplication\TabbedApplication.csproj", "{C7885970-BB27-4B50-A118-D072E45A2489}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabbedApplication.iOS", "TabbedApplication\TabbedApplication.iOS.csproj", "{C7885970-BB27-4B50-A118-D072E45A2489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabbedApplication.Droid", "TabbedApplication.Droid\TabbedApplication.Droid.csproj", "{B040A317-CA7C-483F-94A8-C88D166DDEAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +21,13 @@ Global
 		{C7885970-BB27-4B50-A118-D072E45A2489}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{C7885970-BB27-4B50-A118-D072E45A2489}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{C7885970-BB27-4B50-A118-D072E45A2489}.Debug|iPhone.Build.0 = Debug|iPhone
+		{B040A317-CA7C-483F-94A8-C88D166DDEAF}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{B040A317-CA7C-483F-94A8-C88D166DDEAF}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{B040A317-CA7C-483F-94A8-C88D166DDEAF}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{B040A317-CA7C-483F-94A8-C88D166DDEAF}.Release|iPhone.Build.0 = Release|Any CPU
+		{B040A317-CA7C-483F-94A8-C88D166DDEAF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{B040A317-CA7C-483F-94A8-C88D166DDEAF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{B040A317-CA7C-483F-94A8-C88D166DDEAF}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{B040A317-CA7C-483F-94A8-C88D166DDEAF}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
