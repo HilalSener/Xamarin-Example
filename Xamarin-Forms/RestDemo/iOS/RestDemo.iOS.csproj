@@ -130,6 +130,14 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_action_new.png" />
+    <BundleResource Include="Resources\ic_action_new%402x.png" />
+    <BundleResource Include="Resources\ic_action_new%403x.png" />
+    <BundleResource Include="Resources\ic_autorenew.png" />
+    <BundleResource Include="Resources\ic_autorenew%402x.png" />
+    <BundleResource Include="Resources\ic_autorenew%403x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.0.1.6495\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.1.6495\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
 </Project>

@@ -8,7 +8,7 @@ namespace RestDemo
 		{
 			InitializeComponent();
 
-			MainPage = new RestDemoPage();
+			MainPage = new NavigationPage( new RestDemoPage());
 		}
 
 		protected override void OnStart()

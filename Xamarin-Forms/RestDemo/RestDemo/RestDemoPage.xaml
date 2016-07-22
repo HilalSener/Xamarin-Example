@@ -1,4 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:RestDemo" x:Class="RestDemo.RestDemoPage">
-	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:RestDemo" 
+		x:Class="RestDemo.RestDemoPage"
+		Title="Library Books">
+	<ContentPage.ToolbarItems>
+	<ToolbarItem Text="Add New" Icon="ic_action_new.png" Clicked="OnAddNewBook" />
+	<ToolbarItem Text="Refresh" Icon="ic_autorenew.png" Clicked="OnRefresh" />
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+	<ListView ItemsSource="{Binding}"
+		ItemTapped="OnEditBook">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+			<TextCell Text="{Binding Title}" Detail="{Binding Genre}">
+			<TextCell.ContextActions>
+			<MenuItem Clicked="OnDeleteBook"
+			CommandParameter="{Binding}"
+			Text="Delete" IsDestructive="True" />
+			</TextCell.ContextActions>
+			</TextCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+	</ContentPage.Content>
+
 </ContentPage>
