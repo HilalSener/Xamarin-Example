@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{771A0BB7-2F07-4434-8F1C-780948DA8B79}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MobileApi</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MobileApiPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MobileApiPage.xaml.cs">
+      <DependentUpon>MobileApiPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Start.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPage.xaml.cs">
+      <DependentUpon>DetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Student.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Department.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MobileResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ServiceProvider\" />
+  </ItemGroup>
+</Project>
