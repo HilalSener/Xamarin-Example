@@ -1,34 +1,33 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-		x:Class="MobileApi.DetailPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MobileApi.DetailPage">
 	<ContentPage.Content>
 		<StackLayout>
-			<StackLayout Padding="20,10" Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand"
-					BackgroundColor="#455">
-				<Label Text="Students" TextColor="#fff" FontSize="24" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
-			</StackLayout> 
-		</StackLayout>
-
-		<ListView x:Name="lvStudents" HasUnevenRows="true" BackgroundColor="#455A64">
-			<ListView.ItemTemplate>
-				<DataTemplate>
-					<ViewCell>
-						<StackLayout Padding="5">
-							<StackLayout HeightRequest="70" Spacing="5" Orientation="Horizontal">
-								<Label Text="{Binding FirstCharacter}" TextColor="White" FontSize="50" BackgroundColor="Navy" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-								<StackLayout Spacing="20" WidthRequest="0" HorizontalOptions="FillAndExpand">
-									<Label Text="{Binding Name}" FontAttributes="Bold"/>
-									<Label Text="{Binding Surname}" FontAttributes="Bold"/>
-									<Label Text="{Binding BirthDate}" LineBreakMode="TailTruncation"/>
-									<Label Text="{Binding About}" LineBreakMode="TailTruncation"/>
+			<StackLayout Padding="20,10" Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="#455">
+				<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+					<Label Text="Students" TextColor="#fff" FontSize="24" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+				</StackLayout>
+			</StackLayout>
+			<ListView x:Name="lvStudents" HasUnevenRows="true" BackgroundColor="#455A64">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout Padding="5">
+								<StackLayout HeightRequest="100" Spacing="5" Orientation="Horizontal">
+									<Label Text="{Binding FirstCharacter}" TextColor="White" FontSize="50" WidthRequest="100" BackgroundColor="Navy" 
+										HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+									<StackLayout Spacing="5" WidthRequest="0" HorizontalOptions="FillAndExpand">
+										<Label Text="{Binding Name}" FontAttributes="Bold" />
+										<Label Text="{Binding Surname}" FontAttributes="Bold" />
+										<Label Text="{Binding BirthDate}" LineBreakMode="TailTruncation" />
+										<Label Text="{Binding About}" LineBreakMode="TailTruncation" />
+									</StackLayout>
+									<Label Text="{Binding RegistrationDate}" WidthRequest="70" FontSize="12" />
 								</StackLayout>
-								<Label Text="{Binding RegistrationDate}" WidthRequest="70" FontSize="12"/>
 							</StackLayout>
-						</StackLayout>
-					</ViewCell>
-				</DataTemplate>
-			</ListView.ItemTemplate>
-		</ListView>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

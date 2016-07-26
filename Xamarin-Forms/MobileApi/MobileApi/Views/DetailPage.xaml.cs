@@ -14,13 +14,13 @@ namespace MobileApi
 		{
 			InitializeComponent();
 
-			List<Student> studList = new List<Student>()
-			{
-				new Student() {Name = "Hilal", Surname = "ŞENER", About= "Jr. Xamarin Developer", RegistrationDate=DateTime.Now},
-				new Student() {Name = "Victor", Surname = "Tomaili", About= "Sr. Software Developer", RegistrationDate=DateTime.Now}
-			};
+			//List<Student> studList = new List<Student>()
+			//{
+			//	new Student() {Name = "Hilal", Surname = "ŞENER", About= "Jr. Xamarin Developer", RegistrationDate=DateTime.Now},
+			//	new Student() {Name = "Victor", Surname = "Tomaili", About= "Sr. Software Developer", RegistrationDate=DateTime.Now}
+			//};
 
-			lvStudents.ItemSource = studList;
+			//lvStudents.ItemsSource = studList;
 		}
 	}
 }

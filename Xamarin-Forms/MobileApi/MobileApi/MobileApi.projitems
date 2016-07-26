@@ -35,6 +35,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Student.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Department.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\MobileResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceProvider\StudentProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Views\" />
