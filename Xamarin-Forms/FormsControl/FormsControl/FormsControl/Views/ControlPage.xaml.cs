@@ -17,7 +17,6 @@ namespace FormsControl
 			myDatePicker.Format = "yyyy-MM-dd";
 		}
 
-
 		private void onClicked(object sender, EventArgs e)
 		{
 			activity.IsRunning =! activity.IsRunning;
@@ -29,8 +28,11 @@ namespace FormsControl
 		{ 
 			Picker pckr = (Picker)sender;
 			string selected = pckr.Items[pckr.SelectedIndex];
+			pckr.Unfocus();
 			DisplayAlert("Picker", selected, "Ok", "Cancel");
 		}
+
+
 	}
 }
 

@@ -3,21 +3,23 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="FormsControl.ControlPage">
 	<ContentPage.Content>
-		<StackLayout>
+		<StackLayout BackgroundColor="Black">
 			<StackLayout 
 					HorizontalOptions="FillAndExpand" 
 					VerticalOptions="StartAndExpand"
-					BackgroundColor="Teal">
+					BackgroundColor="White">
 				<Button 
 					Text="Xamarin Forms Control" 
-					Clicked="onClicked" />
+					Clicked="onClicked"
+					BackgroundColor="White"
+					BorderColor="White"/>
 				<ActivityIndicator x:Name="activity" 
 					IsRunning="false" />
 				<DatePicker x:Name="myDatePicker" />
 				<Entry 
 					FontAttributes="Bold" 
 					FontFamily="Calibri" 
-					FontSize="24" 
+					FontSize="20" 
 					HorizontalTextAlignment="Center" 
 					Placeholder="Xamarin Forms Control" 
 					PlaceholderColor="Blue" 
@@ -29,10 +31,10 @@
 					FontFamily="Arial" 
 					FontSize="14"
 					TextColor="Green"
-					BackgroundColor="Black"
+					BackgroundColor="Gray"
 					HeightRequest="150"/>
 			
-				<Picker 
+				<Picker
 					Title="Xamarin" 
 					SelectedIndexChanged="pickerOnChanged">
 					<Picker.Items>
@@ -44,6 +46,22 @@
 				<ProgressBar 
 					x:Name="progressBar" 
 					Progress=".3"/>
+
+				<Slider x:Name="slider"  
+					Minimum="0" 
+					Maximum="100" 
+					Value="50"/>
+
+				<Label 
+					BindingContext="{x:Reference slider}"
+					Text="{Binding Value}"
+					FontSize="Large" 
+					HorizontalOptions="Center"/>
+
+				<Stepper
+					Minimum="5"
+					Maximum="100"
+					Increment="5"/>
 			</StackLayout>
 		</StackLayout>
 	</ContentPage.Content>
