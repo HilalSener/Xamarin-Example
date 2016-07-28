@@ -3,6 +3,7 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="FormsControl.ControlPage">
 	<ContentPage.Content>
+		<StackLayout>
 			<StackLayout 
 					HorizontalOptions="FillAndExpand" 
 					VerticalOptions="StartAndExpand"
@@ -30,13 +31,20 @@
 					TextColor="Green"
 					BackgroundColor="Black"
 					HeightRequest="150"/>
-				<Picker>
-					Title="Xamarin"
+			
+				<Picker 
+					Title="Xamarin" 
+					SelectedIndexChanged="pickerOnChanged">
 					<Picker.Items>
 						<x:String>1</x:String>
 						<x:String>2</x:String>
 					</Picker.Items>
 				</Picker>
+
+				<ProgressBar 
+					x:Name="progressBar" 
+					Progress=".3"/>
 			</StackLayout>
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

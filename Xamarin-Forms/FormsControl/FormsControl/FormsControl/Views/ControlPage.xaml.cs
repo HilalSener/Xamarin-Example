@@ -21,6 +21,15 @@ namespace FormsControl
 		private void onClicked(object sender, EventArgs e)
 		{
 			activity.IsRunning =! activity.IsRunning;
+
+			progressBar.ProgressTo(.8, 1250, Easing.SpringIn);
+		}
+
+		private void pickerOnChanged(object sender, EventArgs e)
+		{ 
+			Picker pckr = (Picker)sender;
+			string selected = pckr.Items[pckr.SelectedIndex];
+			DisplayAlert("Picker", selected, "Ok", "Cancel");
 		}
 	}
 }
