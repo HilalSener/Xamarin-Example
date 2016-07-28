@@ -3,30 +3,40 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="FormsControl.ControlPage">
 	<ContentPage.Content>
-		<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-			<Button 
-				Text="Xamarin Forms Control" 
-				Clicked="onClicked" />
-			<ActivityIndicator x:Name="activity" 
-				IsRunning="false" />
-			<DatePicker x:Name="myDatePicker" />
-			<Entry 
-				FontAttributes="Bold" 
-				FontFamily="Calibri" 
-				FontSize="24" 
-				HorizontalTextAlignment="Center" 
-				Placeholder="Xamarin Forms Control" 
-				PlaceholderColor="Blue" 
-				TextColor="Black" 
-				Keyboard="Numeric" 
-				IsPassword="true"/>
-			<Editor 
-				FontAttributes="Italic" 
-				FontFamily="Arial" 
-				FontSize="14"
-				TextColor="Green"
-				BackgroundColor="Black"
-				HeightRequest="150"/>
-		</StackLayout>
+			<StackLayout 
+					HorizontalOptions="FillAndExpand" 
+					VerticalOptions="StartAndExpand"
+					BackgroundColor="Teal">
+				<Button 
+					Text="Xamarin Forms Control" 
+					Clicked="onClicked" />
+				<ActivityIndicator x:Name="activity" 
+					IsRunning="false" />
+				<DatePicker x:Name="myDatePicker" />
+				<Entry 
+					FontAttributes="Bold" 
+					FontFamily="Calibri" 
+					FontSize="24" 
+					HorizontalTextAlignment="Center" 
+					Placeholder="Xamarin Forms Control" 
+					PlaceholderColor="Blue" 
+					TextColor="Black" 
+					Keyboard="Numeric" 
+					IsPassword="true"/>
+				<Editor 
+					FontAttributes="Italic" 
+					FontFamily="Arial" 
+					FontSize="14"
+					TextColor="Green"
+					BackgroundColor="Black"
+					HeightRequest="150"/>
+				<Picker>
+					Title="Xamarin"
+					<Picker.Items>
+						<x:String>1</x:String>
+						<x:String>2</x:String>
+					</Picker.Items>
+				</Picker>
+			</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
