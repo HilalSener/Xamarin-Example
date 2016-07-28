@@ -17,13 +17,10 @@ namespace FormsControl
 			myDatePicker.Format = "yyyy-MM-dd";
 		}
 
-		int i = 0;
+
 		private void onClicked(object sender, EventArgs e)
 		{
-			if (i % 2 == 0){
-				activity.IsRunning = true;
-			}
-
+			activity.IsRunning =! activity.IsRunning;
 		}
 	}
 }
