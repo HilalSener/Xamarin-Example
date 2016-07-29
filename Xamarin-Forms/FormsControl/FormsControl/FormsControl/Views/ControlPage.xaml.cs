@@ -32,7 +32,10 @@ namespace FormsControl
 			DisplayAlert("Picker", selected, "Ok", "Cancel");
 		}
 
-
+		private void onStepperValueChanged(object sender, ValueChangedEventArgs e)
+		{
+			lblStepper.Text = e.NewValue.ToString();
+		}
 	}
 }
 

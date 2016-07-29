@@ -54,14 +54,19 @@
 
 				<Label 
 					BindingContext="{x:Reference slider}"
-					Text="{Binding Value}"
+					Text="{Binding Value, StringFormat='{0:F0}'}"
 					FontSize="Large" 
 					HorizontalOptions="Center"/>
 
 				<Stepper
 					Minimum="5"
 					Maximum="100"
-					Increment="5"/>
+					Increment="5"
+					ValueChanged="onStepperValueChanged"/>
+
+				<Label x:Name="lblStepper"
+					FontSize="Large"
+					TextColor="Blue"/>
 			</StackLayout>
 		</StackLayout>
 	</ContentPage.Content>
