@@ -3,19 +3,24 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="FormsControl.ControlPage">
 	<ContentPage.Content>
+		<ScrollView>
 		<StackLayout BackgroundColor="Black">
 			<StackLayout 
 					HorizontalOptions="FillAndExpand" 
 					VerticalOptions="StartAndExpand"
 					BackgroundColor="White">
+
 				<Button 
 					Text="Xamarin Forms Control" 
 					Clicked="onClicked"
 					BackgroundColor="White"
 					BorderColor="White"/>
+
 				<ActivityIndicator x:Name="activity" 
 					IsRunning="false" />
+
 				<DatePicker x:Name="myDatePicker" />
+
 				<Entry 
 					FontAttributes="Bold" 
 					FontFamily="Calibri" 
@@ -26,6 +31,7 @@
 					TextColor="Black" 
 					Keyboard="Numeric" 
 					IsPassword="true"/>
+
 				<Editor 
 					FontAttributes="Italic" 
 					FontFamily="Arial" 
@@ -67,7 +73,16 @@
 				<Label x:Name="lblStepper"
 					FontSize="Large"
 					TextColor="Blue"/>
+
+				<Switch 
+					IsToggled="true"
+					Toggled="onToggled"/>
+
+				<TimePicker/>
+
+
 			</StackLayout>
 		</StackLayout>
+		</ScrollView>
 	</ContentPage.Content>
 </ContentPage>
