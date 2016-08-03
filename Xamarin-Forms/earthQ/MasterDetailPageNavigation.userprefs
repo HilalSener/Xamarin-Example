@@ -1,0 +1,4 @@
+﻿<Properties StartupItem="iOS/MasterDetailPageNavigation.iOS.csproj">
+  <MonoDevelop.Ide.ItemProperties.MasterDetailPageNavigation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7CDE76C8-11D0-47DF-A499-014EE33E2672" />
+  <MonoDevelop.Ide.ItemProperties.MasterDetailPageNavigation.Droid PreferredExecutionTarget="Android.3004d77719c01200" />
+</Properties>
