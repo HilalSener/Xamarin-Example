@@ -103,12 +103,12 @@
     <BundleResource Include="Resources\Icon-Small-40%403x.png" />
     <BundleResource Include="Resources\hamburger.png" />
     <BundleResource Include="Resources\hamburger%402x.png" />
-    <BundleResource Include="Resources\reminders.png" />
-    <BundleResource Include="Resources\reminders%402x.png" />
-    <BundleResource Include="Resources\todo.png" />
-    <BundleResource Include="Resources\todo%402x.png" />
-    <BundleResource Include="Resources\contacts.png" />
-    <BundleResource Include="Resources\contacts%402x.png" />
+    <BundleResource Include="Resources\earth.png" />
+    <BundleResource Include="Resources\earth%402x.png" />
+    <BundleResource Include="Resources\home.png" />
+    <BundleResource Include="Resources\home%402x.png" />
+    <BundleResource Include="Resources\settings.png" />
+    <BundleResource Include="Resources\settings%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

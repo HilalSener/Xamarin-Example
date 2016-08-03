@@ -6,11 +6,11 @@ namespace MasterDetailPageNavigation
 	{
 		public earthQPageCS ()
 		{
-			Title = "Reminder Page";
+			Title = "Earthquake Page";
 			Content = new StackLayout { 
 				Children = {
 					new Label {
-						Text = "Reminder data goes here",
+						Text = "Earthquake data goes here",
 						HorizontalOptions = LayoutOptions.Center,
 						VerticalOptions = LayoutOptions.CenterAndExpand
 					}

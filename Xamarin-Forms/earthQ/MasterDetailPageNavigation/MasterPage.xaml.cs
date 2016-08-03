@@ -12,19 +12,20 @@ namespace MasterDetailPageNavigation
 			InitializeComponent ();
 
 			var masterPageItems = new List<MasterPageItem> ();
-			masterPageItems.Add (new MasterPageItem {
+			masterPageItems.Add(new MasterPageItem
+			{
 				Title = "Home",
-				IconSource = "contacts.png",
+				IconSource = "home.png",
 				TargetType = typeof(HomePage)
 			});
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Earthquake",
-				IconSource = "todo.png",
+				IconSource = "earth.png",
 				TargetType = typeof(earthQPage)
 			});
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Setting",
-				IconSource = "reminders.png",
+				IconSource = "settings.png",
 				TargetType = typeof(SettingPage)
 			});
 

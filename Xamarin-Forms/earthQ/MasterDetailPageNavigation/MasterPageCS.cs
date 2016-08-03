@@ -14,17 +14,17 @@ namespace MasterDetailPageNavigation
 			var masterPageItems = new List<MasterPageItem> ();
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Home",
-				IconSource = "contacts.png",
+				IconSource = "home.png",
 				TargetType = typeof(HomePageCS)
 			});
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Eartquake",
-				IconSource = "todo.png",
+				IconSource = "earth.png",
 				TargetType = typeof(earthQPageCS)
 			});
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Setting",
-				IconSource = "reminders.png",
+				IconSource = "setting.png",
 				TargetType = typeof(SettingPageCS)
 			});
 
