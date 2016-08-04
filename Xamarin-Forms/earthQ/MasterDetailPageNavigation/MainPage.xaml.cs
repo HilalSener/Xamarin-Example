@@ -20,7 +20,8 @@ namespace MasterDetailPageNavigation
 		{
 			var item = e.SelectedItem as MasterPageItem;
 			if (item != null) {
-				Detail = new NavigationPage ((Page)Activator.CreateInstance (item.TargetType));
+				Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType)) 
+				{ BarTextColor=Color.White,BarBackgroundColor=Color.FromHex("fe5722") };
 				masterPage.ListView.SelectedItem = null;
 				IsPresented = false;
 			}
