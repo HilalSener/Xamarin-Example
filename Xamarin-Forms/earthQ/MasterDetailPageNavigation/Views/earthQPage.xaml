@@ -2,19 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="MasterDetailPageNavigation.earthQPage"
-			 Title="earthQPage Page">
+			 Title="earthQPage Page"
+			 BackgroundColor = "#ebedfa">
 
 	<ContentPage.Padding>
 		<OnPlatform x:TypeArguments="Thickness" iOS="0,15,0,0"/>
 	</ContentPage.Padding>
 	
 	<ContentPage.Content>
-		<StackLayout Orientation="Vertical">
+		<StackLayout Orientation="Vertical" Margin="15, 0, 15, 15">
 			<ListView x:Name="lstView" VerticalOptions="Center">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
-							<StackLayout Orientation="Horizontal">
+							<StackLayout Orientation="Horizontal" Padding="10">
 								<Label Text="{Binding place}"/>
 								<Label Text="{Binding time}"/>
 								<Label Text="{Binding intensity}"/>
