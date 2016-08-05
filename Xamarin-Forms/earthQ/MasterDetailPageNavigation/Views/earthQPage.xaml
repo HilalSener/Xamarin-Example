@@ -3,12 +3,27 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="MasterDetailPageNavigation.earthQPage"
 			 Title="earthQPage Page">
+
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0,15,0,0"/>
+	</ContentPage.Padding>
+	
 	<ContentPage.Content>
-		<StackLayout>
-			<Label 
-				Text="earthQPage data goes here" 
-				HorizontalOptions="Center" 
-				VerticalOptions="CenterAndExpand" />
+		<StackLayout Orientation="Vertical">
+			<ListView x:Name="lstView" VerticalOptions="Center">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout Orientation="Horizontal">
+								<Label Text="{Binding place}"/>
+								<Label Text="{Binding time}"/>
+								<Label Text="{Binding intensity}"/>
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
 		</StackLayout>
 	</ContentPage.Content>
+	
 </ContentPage>
