@@ -1,22 +1,27 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace MasterDetailPageNavigation
 {
-	public class earthquake
-	{
-		public string place { get; set; }
-		public DateTime time { get; set; }
-		public double intensity { get; set; }
-	}
+	//public class earthquake
+	//{
+	//	public string place { get; set; }
+	//	public DateTime time { get; set; }
+	//	public double intensity { get; set; }
+	//}
 
 	public partial class earthQPage : ContentPage
 	{
 		public earthQPage()
 		{ 
 			InitializeComponent();
+
+
 
 			List<earthquake> earthQ = new List<earthquake>();
 			earthQ.Add(new earthquake { place = "İstanbul", time = DateTime.Now, intensity = 2.1 });
