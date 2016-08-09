@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Newtonsoft.Json;
 using System.Text;
+using System.Collections.ObjectModel;
 
 namespace MasterDetailPageNavigation
 {
@@ -17,18 +18,20 @@ namespace MasterDetailPageNavigation
 
 	public partial class earthQPage : ContentPage
 	{
+		readonly IList<earthQ> earthQs = new ObservableCollection<earthQ>();
+		readonly earthQManager manager = new earthQManager();
+
 		public earthQPage()
-		{ 
+		{
+			BindingContext = earthQs;
 			InitializeComponent();
 
+			//List<earthquake> earthQ = new List<earthquake>();
+			//earthQ.Add(new earthquake { place = "İstanbul", time = DateTime.Now, intensity = 2.1 });
+			//earthQ.Add(new earthquake { place = "Ankara", time = DateTime.Today, intensity = 3.2 });
+			//earthQ.Add(new earthquake { place = "İzmir", time = DateTime.Now, intensity = 1.2 });
 
-
-			List<earthquake> earthQ = new List<earthquake>();
-			earthQ.Add(new earthquake { place = "İstanbul", time = DateTime.Now, intensity = 2.1 });
-			earthQ.Add(new earthquake { place = "Ankara", time = DateTime.Today, intensity = 3.2 });
-			earthQ.Add(new earthquake { place = "İzmir", time = DateTime.Now, intensity = 1.2 });
-
-			lstView.ItemsSource = earthQ;
+			//lstView.ItemsSource = earthQ;
 		}
 
 	}
