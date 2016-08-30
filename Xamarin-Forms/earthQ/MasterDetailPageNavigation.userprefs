@@ -2,18 +2,21 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="MasterDetailPageNavigation/Data/earthQManager.cs">
     <Files>
       <File FileName="MasterDetailPageNavigation/Views/earthQPage.xaml" Line="19" Column="33" />
-      <File FileName="MasterDetailPageNavigation/Views/earthQPage.xaml.cs" Line="21" Column="37" />
-      <File FileName="MasterDetailPageNavigation/Data/earthQManager.cs" Line="23" Column="4" />
-      <File FileName="MasterDetailPageNavigation/Data/ServiceResult.cs" Line="10" Column="23" />
+      <File FileName="MasterDetailPageNavigation/Views/earthQPage.xaml.cs" Line="21" Column="81" />
+      <File FileName="MasterDetailPageNavigation/Data/earthQManager.cs" Line="20" Column="5" />
+      <File FileName="MasterDetailPageNavigation/Data/ServiceResult.cs" Line="26" Column="1" />
+      <File FileName="MasterDetailPageNavigation/packages.config" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <RunToCursorBreakpoint file="/Users/hilal/Projects/Github/xamarin-Example/Xamarin-Forms/earthQ/MasterDetailPageNavigation/Views/earthQPage.xaml" line="19" column="33" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.MasterDetailPageNavigation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E618B0BB-D96D-4AD4-A91A-F2C2F2C913DA" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>UWP/MasterDetailPageNavigation.UWP.csproj</String>
+    <String>WinPhone81/MasterDetailPageNavigation.WinPhone81.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.ItemProperties.MasterDetailPageNavigation.Droid PreferredExecutionTarget="Android.3004d77719c01200" />
 </Properties>

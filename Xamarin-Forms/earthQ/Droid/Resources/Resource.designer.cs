@@ -27,6 +27,7 @@ namespace MasterDetailPageNavigation.Droid
 		public static void UpdateIdValues()
 		{
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::MasterDetailPageNavigation.Droid.Resource.Attribute.actionBarSize;
+			global::ModernHttpClient.Resource.String.library_name = global::MasterDetailPageNavigation.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -66,6 +67,22 @@ namespace MasterDetailPageNavigation.Droid
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7f030000
+			public const int library_name = 2130903040;
+			
+			static String()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private String()
 			{
 			}
 		}

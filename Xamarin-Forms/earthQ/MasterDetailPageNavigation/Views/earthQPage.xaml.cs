@@ -18,7 +18,7 @@ namespace MasterDetailPageNavigation
 
 	public partial class earthQPage : ContentPage
 	{
-		readonly IList<earthQ> earthQs = new ObservableCollection<earthQ>();
+		readonly IList<ServiceResult> earthQs = new ObservableCollection<ServiceResult>();
 		readonly earthQManager manager = new earthQManager();
 
 		public earthQPage()

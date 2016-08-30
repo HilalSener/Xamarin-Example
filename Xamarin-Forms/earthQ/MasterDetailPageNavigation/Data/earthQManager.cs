@@ -4,24 +4,29 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ModernHttpClient;
 using Newtonsoft.Json;
-
+using System.Net;
 
 namespace MasterDetailPageNavigation
 {
 	public class earthQManager
 	{
-		const string Url = "http://sondepremler20160728065405.azurewebsites.net/last";
-
-		public async Task<ServiceResult> GetAll()
+		public static async Task<ServiceResult> GetAll()
 		{
-			string result = await GetStringAsync(Url);
-			return JsonConvert.DeserializeObject<ServiceResult>(result);
-		}
+			var req = HttpWebRequest.Create("http://sondepremler20160728065405.azurewebsites.net/last");
+			req.ContentType = "application/json";
+			req.Method = "GET";
 
-		Task<string> GetStringAsync(string url)
-		{
-			
-		}
-}
-}
+			var response = 
 
+			//	var client = new HttpClient(new NativeMessageHandler());
+			//string result = await client.GetAsync(new Uri("http://sondepremler20160728065405.azurewebsites.net/last"));
+			//return JsonConvert.DeserializeObject<ServiceResult>(result);
+
+		 	//var client = new HttpClient(new NativeMessageHandler());
+			//var result = await client.GetAsync("http://sondepremler20160728065405.azurewebsites.net/last");
+			//var resultString = await result.Content.ReadAsStringAsync();
+			//return resultString;
+
+    	}
+	}
+}
