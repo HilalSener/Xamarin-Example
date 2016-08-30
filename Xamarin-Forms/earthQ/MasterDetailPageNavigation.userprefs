@@ -1,22 +1,17 @@
 ﻿<Properties StartupItem="iOS/MasterDetailPageNavigation.iOS.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MasterDetailPageNavigation/Data/earthQManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MasterDetailPageNavigation/Views/earthQPage.xaml">
     <Files>
-      <File FileName="MasterDetailPageNavigation/Views/earthQPage.xaml" Line="19" Column="33" />
-      <File FileName="MasterDetailPageNavigation/Views/earthQPage.xaml.cs" Line="21" Column="81" />
-      <File FileName="MasterDetailPageNavigation/Data/earthQManager.cs" Line="20" Column="5" />
-      <File FileName="MasterDetailPageNavigation/Data/ServiceResult.cs" Line="26" Column="1" />
-      <File FileName="MasterDetailPageNavigation/packages.config" Line="1" Column="1" />
+      <File FileName="MasterDetailPageNavigation/Views/earthQPage.xaml" Line="18" Column="57" />
+      <File FileName="MasterDetailPageNavigation/Views/earthQPage.xaml.cs" Line="12" Column="26" />
+      <File FileName="MasterDetailPageNavigation/App.cs" Line="10" Column="4" />
+      <File FileName="MasterDetailPageNavigation/MainPage.xaml.cs" Line="23" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.MasterDetailPageNavigation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E618B0BB-D96D-4AD4-A91A-F2C2F2C913DA" />
+  <MonoDevelop.Ide.ItemProperties.MasterDetailPageNavigation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7CDE76C8-11D0-47DF-A499-014EE33E2672" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <DisabledProjects>
-    <String>UWP/MasterDetailPageNavigation.UWP.csproj</String>
-    <String>WinPhone81/MasterDetailPageNavigation.WinPhone81.csproj</String>
-  </DisabledProjects>
   <MonoDevelop.Ide.ItemProperties.MasterDetailPageNavigation.Droid PreferredExecutionTarget="Android.3004d77719c01200" />
 </Properties>
